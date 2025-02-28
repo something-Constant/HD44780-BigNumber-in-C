@@ -8,6 +8,7 @@
  * Contact : https://github.com/something-Constant
 
 
+
   available Fonts:  Big:  3*2
   
                     Others: 2*2{
@@ -51,7 +52,7 @@ enum Numberes{
 void BigNumberinit(void);
 void BigNumberPrint(char number, char start);
 void BigNumberClaer(char start);
-void BigNumberBlink(char value, char start, char on_time, char off_time,
-char *time);
+void BigNumberBlink(char value, char start, unsigned int on_time, unsigned int off_time,
+                    unsigned int *time);
 
 #endif

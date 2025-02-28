@@ -1084,10 +1084,13 @@ void BigNumberClaer(char start) {
   the "on_time" is the time that the number is the value.
   the "off_time" is the time that the number is replaced with white space.
   the "*time" is the timer valriable that is increasing in time.
+  
+  ** the off_time must be bigger then on_time.
 */
 
-void BigNumberBlink(char value, char start, char on_time, char off_time,
-                    char *time) {
+void BigNumberBlink(char value, char start, unsigned int on_time, unsigned int off_time,
+                    unsigned int *time) {
+  off_time += on_time;
 
   /* On time */
   if (*time < on_time) {

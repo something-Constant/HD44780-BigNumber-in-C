@@ -57,7 +57,8 @@ static void MX_GPIO_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-uint8_t i, Time;
+uint8_t i;
+unsigned int Time;
 
 
 
@@ -104,7 +105,9 @@ int main(void) {
 
 
     
-    BigNumberBlink(i, 0, 20, 40, &Time);
+    BigNumberBlink(i, 0, 500, 150, &Time);
+    
+    i = 5;
     
 
     /* USER CODE END WHILE */
