@@ -16,7 +16,7 @@ void BigNymberShow() {
   BigNumberPrint(3, 10);
   BigNumberPrint(4, 14);
 
-  HAL_Delay(5000);
+  HAL_Delay(1500);
   lcd_clear();
 
   BigNumberPrint(5, 0);
@@ -25,7 +25,7 @@ void BigNymberShow() {
   BigNumberPrint(8, 10);
   BigNumberPrint(9, 14);
 
-  HAL_Delay(5000);
+  HAL_Delay(1500);
   lcd_clear();
 }
 
@@ -48,9 +48,11 @@ int main(void) {
   while (1) {
 
     // printing all number in two step
-    // BigNymberShow();
+    
+    BigNymberShow();
 
     // Printing four digit number, it can increase to five
+    
     // BigNumberPrint((i / 1000), 0);
     // BigNumberPrint((i / 100), 2);
     // BigNumberPrint((i / 10), 4);
@@ -59,8 +61,9 @@ int main(void) {
     // i++;
 
     /// Exsamle of blink function
-    BigNumberBlink(i, 0, 500, 350, &Time);
-    i = 5;
+    
+    // BigNumberBlink(i, 0, 500, 350, &Time);
+    // i = 5;
   }
 }
 
@@ -123,3 +126,22 @@ static void MX_GPIO_Init(void) {
   /* USER CODE BEGIN MX_GPIO_Init_2 */
   /* USER CODE END MX_GPIO_Init_2 */
 }
+
+void Error_Handler(void) {
+  /* USER CODE BEGIN Error_Handler_Debug */
+  /* USER CODE END Error_Handler_Debug */
+}
+
+#ifdef USE_FULL_ASSERT
+/**
+ * @brief  Reports the name of the source file and the source line number
+ *         where the assert_param error has occurred.
+ * @param  file: pointer to the source file name
+ * @param  line: assert_param error line source number
+ * @retval None
+ */
+void assert_failed(uint8_t *file, uint32_t line) {
+  /* USER CODE BEGIN 6 */
+  /* USER CODE END 6 */
+}
+#endif /* USE_FULL_ASSERT */
