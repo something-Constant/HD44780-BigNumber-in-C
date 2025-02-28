@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "./BigNumber/BigNumber.h"
+#include "./BigNumber/BigNumber.c"
 
 /* USER CODE END Includes */
 
@@ -53,8 +53,13 @@ static void MX_GPIO_Init(void);
 
 /* USER CODE END PFP */
 
+
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+uint8_t i, Time;
+
+
 
 /* USER CODE END 0 */
 
@@ -97,24 +102,10 @@ int main(void) {
   BigNumberinit();
   while (1) {
 
-    BigNumberPrint(0, 0);
-    BigNumberPrint(1, 3);
-    BigNumberPrint(2, 6);
-    BigNumberPrint(3, 10);
-    BigNumberPrint(4, 14);
 
-    HAL_Delay(3000);
-    lcd_clear();
     
-
-    BigNumberPrint(5, 0);
-    BigNumberPrint(6, 3);
-    BigNumberPrint(7, 6);
-    BigNumberPrint(8, 10);
-    BigNumberPrint(9, 14);
+    BigNumberBlink(i, 0, 20, 40, &Time);
     
-    HAL_Delay(3000);
-    lcd_clear();
 
     /* USER CODE END WHILE */
 
