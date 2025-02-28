@@ -2,8 +2,10 @@
 
 # available Fonts
 > **_Big: (3*2):_**
-![Alt text](./Fonts/BIG/BIG%2001234.jpg)
-![Alt text](./Fonts/BIG/BIG%2056789.jpg)
+> 
+> ![Alt text](./Fonts/BIG/BIG%2001234.jpg)
+> ![Alt text](./Fonts/BIG/BIG%2056789.jpg)
+ 
 ---
 - Others (2*2):
 > **_Real:_** 
