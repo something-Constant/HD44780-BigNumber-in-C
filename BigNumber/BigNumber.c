@@ -1,5 +1,5 @@
 /*
- *  Bignumber.c
+ *  BigNumber.c
  *
  * Created : 2/28/2025 17:21:02
  * Author : Mohamad Hoseyn Meymandi

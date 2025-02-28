@@ -1,7 +1,7 @@
 #ifndef _BigNumber_H
 #define _BigNumber_H
 /*
- *  Bignumber.h
+ *  BigNumber.h
  *
  * Created : 2/28/2025 17:21:02
  * Author : Mohamad Hoseyn Meymandi
