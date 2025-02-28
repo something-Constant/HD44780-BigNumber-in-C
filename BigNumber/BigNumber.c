@@ -9,6 +9,9 @@
 #include "BigNumber.h"
 
 
+/*
+  the "BigNumberinit" will initialize the CGROM address 0 to 8
+*/
 void BigNumberinit(void) {
 
   lcd_init();
