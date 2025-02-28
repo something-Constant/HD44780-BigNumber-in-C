@@ -1,0 +1,10 @@
+{
+    "BreakBeforeBraces": "Custom",
+    "BraceWrapping": {
+        "AfterEnum": "true",
+        "AfterStruct": "false",
+        "SplitEmptyFunction": "false",
+        "BeforeElse": "true"
+    },
+    "IndentCaseLabels": "true"
+}
